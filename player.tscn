@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://bjwd7ftuqbq7h"]
+[gd_scene load_steps=17 format=3 uid="uid://bjwd7ftuqbq7h"]
 
 [ext_resource type="Script" uid="uid://jm23nxjm3mw3" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://b8yd82uauj3y0" path="res://ninja_upper.png" id="2_hqtel"]
 [ext_resource type="Texture2D" uid="uid://d01nawtih1mhp" path="res://ninja_lower.png" id="3_sweqy"]
+[ext_resource type="Texture2D" uid="uid://g5s0d67hjagy" path="res://adventurer-full.png" id="4_hqtel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aqk2v"]
 size = Vector2(12, 16)
@@ -192,6 +193,13 @@ hframes = 15
 texture = ExtResource("2_hqtel")
 offset = Vector2(16, 0)
 hframes = 15
+
+[node name="Sprite2D" type="Sprite2D" parent="Anchor"]
+visible = false
+texture = ExtResource("4_hqtel")
+hframes = 7
+vframes = 16
+frame = 57
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
